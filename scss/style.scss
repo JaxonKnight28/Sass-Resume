@@ -1,0 +1,39 @@
+$white: #ffffff;
+$topMargin: 40px;
+$grayFont: #b1b1b1;
+$papperPad: 50px;
+
+
+body {
+    margin: 0;
+    display: flex;
+    background-color: #dadfea;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper {
+    margin-top: $topMargin;
+    padding: $papperPad;
+    width: 80%;
+    background-color: $white;
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+%base-font {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#mainTitle {
+    @extend %base-font;
+    font-size: 60px;
+}
+
+.subGray {
+    @extend %base-font;
+    font-size: 30px;
+    color: $grayFont;
+}
