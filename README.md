@@ -1,1 +1,1 @@
-This is a Project to make a personal Resumes
+This is a Project to make a personal Resume
