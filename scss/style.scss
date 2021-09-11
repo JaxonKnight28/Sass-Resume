@@ -1,13 +1,20 @@
+@import "profile";
+
 $white: #ffffff;
 $topMargin: 40px;
 $grayFont: #b1b1b1;
 $papperPad: 50px;
+$line: 1px solid lightgray;
+$wordSpacing: 20px;
 
 
 body {
     margin: 0;
     display: flex;
-    background-color: #dadfea;
+    // background-color: #000000;
+    background-image: url("/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
 }
@@ -17,9 +24,12 @@ body {
     padding: $papperPad;
     width: 80%;
     background-color: $white;
+    border-radius: 20px;;
     .header {
         display: flex;
         flex-direction: column;
+        border-bottom: $line;
+        
     }
 }
 
@@ -36,4 +46,50 @@ body {
     @extend %base-font;
     font-size: 30px;
     color: $grayFont;
+    margin-bottom: $wordSpacing;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    display: flex;
+    .contact {
+        border-right: $line;
+        padding-right: $wordSpacing;
+    }
+}
+
+.profile {
+    width: 100%;
+    margin-left: 20px;
+}
+
+.title {
+    @extend %base-font;
+    font-size: 40px;
+    padding-top: $wordSpacing;
+}
+.subTitle {
+    margin-top: $wordSpacing;
+    @extend %base-font;
+    font-size: 25px;
+}
+
+.text {
+    @extend %base-font
+}
+.profile {
+    .text {
+        @extend %base-font;
+        padding: $wordSpacing 0 $wordSpacing 0;
+        border-bottom: $line;
+    }
+}
+
+li {
+    @extend %base-font;
+    justify-content: flex-start;
 }
