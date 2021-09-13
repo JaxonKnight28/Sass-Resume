@@ -4,23 +4,21 @@ $white: #ffffff;
 $topMargin: 40px;
 $grayFont: #b1b1b1;
 $papperPad: 50px;
-$line: 1px solid lightgray;
+$line: 1px solid rgb(184, 183, 183);
 $wordSpacing: 20px;
 
 
 body {
     margin: 0;
     display: flex;
-    // background-color: #000000;
-    background-image: url("../background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background(url("../background.jpg"));
     justify-content: center;
     align-items: center;
 }
 
 .paper {
     margin-top: $topMargin;
+    margin-bottom: $topMargin;
     padding: $papperPad;
     width: 80%;
     background-color: $white;
@@ -92,4 +90,14 @@ a {
 li {
     @extend %base-font;
     justify-content: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        flex-direction: column;
+        border-right: none;
+        .contact {
+            border-right: none;
+        }
+    }
 }

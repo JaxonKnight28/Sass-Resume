@@ -16,6 +16,7 @@ body {
 
 .paper {
   margin-top: 40px;
+  margin-bottom: 40px;
   padding: 50px;
   width: 80%;
   background-color: #ffffff;
@@ -24,7 +25,7 @@ body {
 .paper .header {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b8b7b7;
 }
 
 li, .profile .text, .text, .subTitle, .title, .subGray, #mainTitle {
@@ -50,7 +51,7 @@ a {
   display: flex;
 }
 .content .contact {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid #b8b7b7;
   padding-right: 20px;
 }
 
@@ -71,11 +72,21 @@ a {
 
 .profile .text {
   padding: 20px 0 20px 0;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #b8b7b7;
 }
 
 li {
   justify-content: flex-start;
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    flex-direction: column;
+    border-right: none;
+  }
+  .content .contact {
+    border-right: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
