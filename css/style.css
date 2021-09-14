@@ -79,13 +79,17 @@ li {
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
   .content {
     flex-direction: column;
     border-right: none;
   }
   .content .contact {
     border-right: none;
+    align-self: center;
+  }
+  .content .profile {
+    align-self: center;
   }
 }
 
