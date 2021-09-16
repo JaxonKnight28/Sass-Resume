@@ -4,6 +4,12 @@
     height: 5px;
     background-color: #000000;
 }
+.lightLine {
+    width: 30px;
+    height: 2px;
+    background-color: #c4c4c4;
+    margin-bottom: 5px;
+}
 
 @mixin background($image) {
     background-image:$image;
